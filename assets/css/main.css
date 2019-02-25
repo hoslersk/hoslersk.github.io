@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Permanent+Marker');
+
+html {
+  /* font-family: 'Cabin', sans-serif; */
+  font-family: 'Permanent Marker', cursive;
+  overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 1rem 0;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #ddd;
+  background-image: url('../images/qinghill.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 70% 100%;
+}
+
+.eyebrow {
+  display: block;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .bg-image {
+    background-position: top right;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .bg-image {
+    background-size: 100%;
+  }
+}
