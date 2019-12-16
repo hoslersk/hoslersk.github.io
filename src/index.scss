@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import './variables.scss';
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  z-index: 0;
+  font-family: 'Roboto', sans-serif;
+  padding: 2.5rem 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.content {
+  padding: 1rem 1rem;
+  background-color: rgba($white, 0.3);
+}

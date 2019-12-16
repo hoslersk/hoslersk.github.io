@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.background-trim {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  height: 2rem;
+  width: 100%;
+
+  &--top {
+    top: 1rem;
+  }
+
+  &--bottom {
+    bottom: 1rem;;
+  }
+}
