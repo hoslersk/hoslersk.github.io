@@ -7,16 +7,16 @@ import BackgroundTrim from './background-trim';
 import Heading from './heading';
 import SiteHeader from './site-header';
 
-export default function Page() {
+export default function Page({ children, heading }) {
   return (
     <Fragment>
       <SiteHeader />
       <BackgroundTrim position="top" />
       <main className="container">
         <Heading>
-          Schyler Hosler
+          {heading}
         </Heading>
-        <div className="content">Under Construction</div>
+        {children}
       </main>
       {/*<footer>footer</footer>*/}
       <BackgroundSvg position="top" />

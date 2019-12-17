@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import './cursor-svg.scss';
 
-export default function CursorSvg({ className }) {
+export default function CursorSvg({ isActive, className }) {
   const cursorSvgClass = classNames('cursor-svg', className);
   return (
     <svg
@@ -18,7 +18,11 @@ export default function CursorSvg({ className }) {
           <circle cx="3" cy="5" r="0.75" />
         </mask>
       </defs>
-      <path mask="url(#mask)" fill="currentColor" d="M0,5 L3.5,3 L10,5 L3.5,7 L0,5" />
+      <path
+        mask="url(#mask)"
+        fill={isActive? '#c9c3af' : 'currentColor'}
+        d="M0,5 L3.5,3 L10,5 L3.5,7 L0,5"
+      />
       <rect fill="currentColor" x="8.75" y="2" width="1.25" height="1.25" />
       <rect fill="currentColor" x="8.75" y="7" width="1.25" height="1.25" />
     </svg>
