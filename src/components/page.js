@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import BackgroundGrid from './background-grid';
+import BackgroundShadow from './background-shadow';
 import BackgroundSvg from './background-svg';
 import BackgroundTrim from './background-trim';
 import Heading from './heading';
@@ -10,6 +11,7 @@ export default function Page() {
   return (
     <Fragment>
       <SiteHeader />
+      <BackgroundTrim position="top" />
       <main className="container">
         <Heading>
           Schyler Hosler
@@ -17,9 +19,9 @@ export default function Page() {
         <div className="content">Under Construction</div>
       </main>
       {/*<footer>footer</footer>*/}
-      <BackgroundTrim position="top" />
       <BackgroundSvg position="top" />
       <BackgroundGrid />
+      <BackgroundShadow />
       <BackgroundSvg position="bottom" />
       <BackgroundTrim position="bottom" />
     </Fragment>

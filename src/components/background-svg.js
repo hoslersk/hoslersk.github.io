@@ -22,19 +22,19 @@ export default function BackgroundSvg({ position }) {
           className="background-svg__circle"
           fill="none"
           stroke="currentColor"
-          strokeWidth="0.02"
+          strokeWidth="0.03"
           cx="0"
           cy="0"
-          r="5"
+          r="6"
         />
         <circle
           className="background-svg__circle"
           fill="none"
           stroke="currentColor"
-          strokeWidth="0.02"
+          strokeWidth="0.03"
           cx="0"
           cy="0"
-          r="4.8"
+          r="5.8"
         />
       </g>
       <g className="background-svg__lines">
@@ -45,7 +45,7 @@ export default function BackgroundSvg({ position }) {
           x2="6.5"
           y2="6"
           stroke="currentColor"
-          strokeWidth="0.02"
+          strokeWidth="0.03"
         />
         <line
           className="background-svg__line"
@@ -54,7 +54,7 @@ export default function BackgroundSvg({ position }) {
           x2="7"
           y2="7"
           stroke="currentColor"
-          strokeWidth="0.02"
+          strokeWidth="0.03"
         />
         <line
           className="background-svg__line"
@@ -63,7 +63,7 @@ export default function BackgroundSvg({ position }) {
           x2="6"
           y2="6.5"
           stroke="currentColor"
-          strokeWidth="0.02"
+          strokeWidth="0.03"
         />
       </g>
     </svg>

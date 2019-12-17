@@ -1,6 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
-
 
 import NavItem from './nav-item';
 import NavLink from './nav-link';
@@ -20,18 +18,28 @@ export default function SiteHeader() {
       <nav className={navClass}>
         <ul className={listClass}>
           <NavItem className={listItemClass}>
-            <NavLink className={linkClass} to="#">
+            <NavLink className={linkClass} to="/">
               Home
             </NavLink>
           </NavItem>
           <NavItem className={listItemClass}>
-            <NavLink className={linkClass} to="#">
-              About (TBD)
+            <NavLink className={linkClass} to="/about">
+              About
             </NavLink>
           </NavItem>
           <NavItem className={listItemClass}>
-            <NavLink className={linkClass} to="#">
-              Projects (TBD)
+            <NavLink className={linkClass} to="/tools">
+              Tools
+            </NavLink>
+          </NavItem>
+          <NavItem className={listItemClass}>
+            <NavLink className={linkClass} to="/projects">
+              Projects
+            </NavLink>
+          </NavItem>
+          <NavItem className={listItemClass}>
+            <NavLink className={linkClass} to="/contact">
+              Contact
             </NavLink>
           </NavItem>
         </ul>

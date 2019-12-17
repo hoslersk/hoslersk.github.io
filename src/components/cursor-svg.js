@@ -19,8 +19,8 @@ export default function CursorSvg({ className }) {
         </mask>
       </defs>
       <path mask="url(#mask)" fill="currentColor" d="M0,5 L3.5,3 L10,5 L3.5,7 L0,5" />
-      <circle fill="currentColor" cx="9" cy="2" r="0.75" />
-      <circle fill="currentColor" cx="9" cy="8" r="0.75" />
+      <rect fill="currentColor" x="8.75" y="2" width="1.25" height="1.25" />
+      <rect fill="currentColor" x="8.75" y="7" width="1.25" height="1.25" />
     </svg>
   );
 }
