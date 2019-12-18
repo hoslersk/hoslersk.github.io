@@ -8,9 +8,13 @@ $noto-sans: 'Noto Sans JP', sans-serif;
 // Colors
 $white: #ffffff;
 $black: #000000;
-$body-bg: rgba(201, 195, 175, 1);
-$body-color: rgba(50, 52, 38, 1);
+$body-bg: #c9c3af;
+$body-color: #323426;
+// $body-color: rgba(, 0.6);
+// $body-color: rgba(#1b1d16, 0.8);
 $inactive-color: rgba($body-color, 0.15);
+// $link-color: #cb6751;
+$link-color: #a04231;
 
 // Animations
 $hover-animation-duration: 0.3s;

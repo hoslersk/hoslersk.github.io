@@ -22,6 +22,19 @@ body {
   position: relative;
 }
 
+p {
+  margin-top: 0;
+}
+
+a {
+  color: $link-color;
+}
+
+main {
+  height: 100%;
+  overflow: scroll;
+}
+
 .container {
   max-width: 1000px;
   margin: auto;

@@ -6,10 +6,10 @@ export default function HomePage() {
   return (
     <Fragment>
       <Heading>
-        Home <small>- ホーム</small>
+        Home <small aria-hidden="true">- ホーム</small>
       </Heading>
       <div className="content">
-        Under Construction
+        Under Construction.
       </div>
     </Fragment>
   );

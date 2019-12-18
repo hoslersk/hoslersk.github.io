@@ -6,10 +6,10 @@ export default function ToolsPage() {
   return (
     <Fragment>
       <Heading>
-        Tools <small>- ツール</small>
+        Tools <small aria-hidden="true">- ツール</small>
       </Heading>
       <div className="content">
-        TBD
+        Coming Soon.
       </div>
     </Fragment>
   );

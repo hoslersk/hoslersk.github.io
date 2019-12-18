@@ -7,15 +7,12 @@ import BackgroundTrim from './background-trim';
 import Heading from './heading';
 import SiteHeader from './site-header';
 
-export default function Page({ children, heading }) {
+export default function Page({ children }) {
   return (
     <Fragment>
       <SiteHeader />
       <BackgroundTrim position="top" />
       <main className="container">
-        <Heading>
-          {heading}
-        </Heading>
         {children}
       </main>
       {/*<footer>footer</footer>*/}
