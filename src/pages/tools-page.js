@@ -5,7 +5,9 @@ import Heading from '../components/heading';
 export default function ToolsPage() {
   return (
     <Fragment>
-      <Heading>Tools</Heading>
+      <Heading>
+        Tools <small>- ツール</small>
+      </Heading>
       <div className="content">
         TBD
       </div>

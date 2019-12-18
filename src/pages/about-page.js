@@ -5,7 +5,9 @@ import Heading from '../components/heading';
 export default function AboutPage() {
   return (
     <Fragment>
-      <Heading>About</Heading>
+      <Heading>
+        About <small>- スカイラーについて</small>
+      </Heading>
       <div className="content">
         TBD
       </div>

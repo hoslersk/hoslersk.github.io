@@ -5,7 +5,9 @@ import Heading from '../components/heading';
 export default function HomePage() {
   return (
     <Fragment>
-      <Heading>Home</Heading>
+      <Heading>
+        Home <small>- ホーム</small>
+      </Heading>
       <div className="content">
         Under Construction
       </div>

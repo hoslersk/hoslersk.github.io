@@ -5,4 +5,11 @@
   font-size: 3rem;
   text-transform: uppercase;
   text-shadow: 0.4rem 0.4rem $inactive-color;
+
+  small {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: $noto-sans;
+    text-shadow: none;
+  }
 }

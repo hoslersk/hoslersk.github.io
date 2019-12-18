@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 @import './variables.scss';
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: $roboto;
 }
 
 html, body {
@@ -21,6 +19,7 @@ body {
   height: 100vh;
   font-size: 1rem;
   overflow: hidden;
+  position: relative;
 }
 
 .container {
