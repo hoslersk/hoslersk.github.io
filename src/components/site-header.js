@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import NavItem from './nav-item';
 import NavLink from './nav-link';
+import BackgroundTrim from './background-trim';
 
 import './site-header.scss';
 
-export default function SiteHeader() {
+const SiteHeader = forwardRef((props, ref) => {
   const baseClass = 'site-header',
         className = baseClass,
         navClass = `${baseClass}__nav`,
@@ -14,7 +15,7 @@ export default function SiteHeader() {
         linkClass = `${baseClass}__link`;
 
   return (
-    <header className={className}>
+    <header className={className} ref={ref}>
       <nav className={navClass}>
         <ul className={listClass}>
           <NavItem className={listItemClass}>
@@ -44,6 +45,9 @@ export default function SiteHeader() {
           </NavItem>
         </ul>
       </nav>
+      <BackgroundTrim position="bottom" />
     </header>
   );
-}
+});
+
+export default SiteHeader;

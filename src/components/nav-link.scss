@@ -25,9 +25,6 @@
     &:focus,
     &:hover {
       @media (min-width: 992px) {
-        &:before {
-          border-color: transparent;
-        }
         &:after {
           transition: width 0s linear, height $hover-animation-duration ease-out;
           top: 4px;

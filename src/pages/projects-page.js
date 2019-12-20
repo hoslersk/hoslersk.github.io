@@ -29,6 +29,69 @@ export default function ProjectsPage() {
           </li>
         </ul>
       </div>
+      <div className="content">
+        <p>Coming Soon.</p>
+        <p>Codepens (WIP):</p>
+        <ul>
+          <li>
+            <a href="https://codepen.io/hoslersk/full/MWYyKPK" target="_blank" rel="noreferrer noopener">
+              Color Contrast Checker (Accessibility)
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/hoslersk/full/QWWXxBy" target="_blank" rel="noreferrer noopener">
+              Pokémon Ruby and Sapphire SVG Patterns
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/hoslersk/pen/pozPzPX" target="_blank" rel="noreferrer noopener">
+              Digital Pet SVG
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="content">
+        <p>Coming Soon.</p>
+        <p>Codepens (WIP):</p>
+        <ul>
+          <li>
+            <a href="https://codepen.io/hoslersk/full/MWYyKPK" target="_blank" rel="noreferrer noopener">
+              Color Contrast Checker (Accessibility)
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/hoslersk/full/QWWXxBy" target="_blank" rel="noreferrer noopener">
+              Pokémon Ruby and Sapphire SVG Patterns
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/hoslersk/pen/pozPzPX" target="_blank" rel="noreferrer noopener">
+              Digital Pet SVG
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="content">
+        <p>Coming Soon.</p>
+        <p>Codepens (WIP):</p>
+        <ul>
+          <li>
+            <a href="https://codepen.io/hoslersk/full/MWYyKPK" target="_blank" rel="noreferrer noopener">
+              Color Contrast Checker (Accessibility)
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/hoslersk/full/QWWXxBy" target="_blank" rel="noreferrer noopener">
+              Pokémon Ruby and Sapphire SVG Patterns
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/hoslersk/pen/pozPzPX" target="_blank" rel="noreferrer noopener">
+              Digital Pet SVG
+            </a>
+          </li>
+        </ul>
+      </div>
     </Fragment>
   );
 }

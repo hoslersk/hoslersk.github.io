@@ -1,9 +1,13 @@
 @import '../variables.scss';
 
 .site-header {
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 1rem 1rem;
+  position: relative;
+
+  &__nav {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+  }
 
   &__list {
     list-style: none;
