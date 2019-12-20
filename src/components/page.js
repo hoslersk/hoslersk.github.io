@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
+import ResizeObserver from 'resize-observer-polyfill';
 
 import BackgroundGrid from './background-grid';
 import BackgroundShadow from './background-shadow';
