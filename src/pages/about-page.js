@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import Heading from '../components/heading';
+import ContentWrapper from '../components/content-wrapper';
 
 export default function AboutPage() {
   return (
@@ -8,14 +9,17 @@ export default function AboutPage() {
       <Heading>
         About <small aria-hidden="true">- スカイラーについて</small>
       </Heading>
-      <div className="content">
+      <ContentWrapper>
+        <p>Hi, my name is Schyler ("SKY-LER") and I'm a Web Developer.</p>
+        <p>(Insert obligatory "I like to make stuff" line here.)</p>
+
         <p>Current Interests:</p>
         <ul>
-          <li>Accessibility</li>
+          <li>Web Accessibility</li>
           <li>SVG</li>
           <li>Video Game UIs</li>
         </ul>
-      </div>
+      </ContentWrapper>
     </Fragment>
   );
 }

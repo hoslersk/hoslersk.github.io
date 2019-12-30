@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import Heading from '../components/heading';
+import ContentWrapper from '../components/content-wrapper';
 
 export default function ContactPage() {
   return (
@@ -8,8 +9,9 @@ export default function ContactPage() {
       <Heading>
         Contact <small aria-hidden="true">- お問合せ</small>
       </Heading>
-      <div className="content">
+      <ContentWrapper>
         <p>Coming Soon.</p>
+        <p>External links:</p>
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/schyler-hosler-a282aa27" target="_blank" rel="noreferrer noopener">
@@ -32,7 +34,7 @@ export default function ContactPage() {
             </a>
           </li>
         </ul>
-      </div>
+      </ContentWrapper>
     </Fragment>
   );
 }

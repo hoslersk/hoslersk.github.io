@@ -4,8 +4,6 @@ import ResizeObserver from 'resize-observer-polyfill';
 import BackgroundGrid from './background-grid';
 import BackgroundShadow from './background-shadow';
 import BackgroundSvg from './background-svg';
-import BackgroundTrim from './background-trim';
-import Heading from './heading';
 import SiteHeader from './site-header';
 import SiteFooter from './site-footer';
 
