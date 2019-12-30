@@ -40,8 +40,14 @@ export default function Page({ children }) {
 
   return (
     <Fragment>
+      <a className="skip-navigation-link" href="#main">Skip to main content</a>
       <SiteHeader ref={ref} />
-      <main className="container" style={{ height: mainElementHeight + 'px' }}>
+      <main
+        className="container"
+        id="main"
+        style={{ height: mainElementHeight + 'px' }}
+        tabIndex="-1"
+      >
         {children}
       </main>
       <SiteFooter />

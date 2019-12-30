@@ -42,6 +42,10 @@ main {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 2.5rem;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 ul {
@@ -53,4 +57,20 @@ ul {
   margin: auto;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.skip-navigation-link {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  background-color: $content-bg;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 2.5rem;
+  z-index: 3;
+
+  &:focus {
+    height: auto;
+  }
 }
