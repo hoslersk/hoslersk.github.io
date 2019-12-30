@@ -12,6 +12,12 @@ export default function AboutPage() {
       <ContentWrapper>
         <p>Hi, my name is Schyler ("SKY-LER") and I'm a Web Developer.</p>
         <p>(Insert obligatory "I like to make stuff" line here.)</p>
+        <p>
+          Check out my{' '}
+          <a href="/schyler-hosler-resume.pdf" target="_blank" rel="noreferrer noopener">
+            resume
+          </a> for more information.
+        </p>
 
         <p>Current Interests:</p>
         <ul>
