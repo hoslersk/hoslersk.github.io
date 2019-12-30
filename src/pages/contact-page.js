@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react';
 
+import PageTitle from '../components/page-title';
 import Heading from '../components/heading';
 import ContentWrapper from '../components/content-wrapper';
 
 export default function ContactPage() {
   return (
     <Fragment>
+      <PageTitle title="Contact - Schyler Hosler" />
       <Heading>
         Contact <small aria-hidden="true">- お問合せ</small>
       </Heading>

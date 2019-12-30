@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
+import PageTitle from '../components/page-title';
 import Heading from '../components/heading';
 import ContentWrapper from '../components/content-wrapper';
 
 export default function HomePage() {
   return (
     <Fragment>
+      <PageTitle title="Home - Schyler Hosler" />
       <Heading>
         Home <small aria-hidden="true">- ホーム</small>
       </Heading>
