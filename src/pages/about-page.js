@@ -12,7 +12,7 @@ export default function AboutPage() {
         About <small aria-hidden="true">- スカイラーについて</small>
       </Heading>
       <div className="row">
-        <div className="column">
+        <div className="column column--lg">
           <ContentWrapper>
             <p>Hi, my name is Schyler ("SKY-LER") and I'm a Web Developer.</p>
             <p>(Insert obligatory "I like to make stuff" line here.)</p>
@@ -52,7 +52,7 @@ export default function AboutPage() {
           </ContentWrapper>
         </div>
 
-        <aside className="column">
+        <aside className="column column--sm">
           <ContentWrapper>
             {/*
               <h2>Currently Playing:</h2>

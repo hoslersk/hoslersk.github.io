@@ -79,9 +79,23 @@ h3 {
 }
 
 .column {
-  flex: 1 1 50%;
   padding: 0 1rem;
   margin-bottom: 1rem;
+
+  @media (min-width: 992px) {
+    width: 100%;
+    flex: 1 1 100%;
+
+    &--lg {
+      width: 60%;
+      flex: 1 1 60%;
+    }
+
+    &--sm {
+      width: 40%;
+      flex: 1 1 40%;
+    }
+  }
 }
 
 .skip-navigation-link {
