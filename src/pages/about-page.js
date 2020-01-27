@@ -28,8 +28,9 @@ export default function AboutPage() {
               <li>
                 Web Accessibility
                 <ul>
-                  <li>IAAP CPACC and WAS Certification prep</li>
-                  <li>Finding or developing tools to aid in process</li>
+                  <li>Certified Professional in Accessibility Core Competency (CPACC)</li>
+                  <li>Working toward Web Accessibility Specialist (WAS)</li>
+                  <li>Finding or developing tools</li>
                 </ul>
               </li>
               <li>
@@ -37,7 +38,6 @@ export default function AboutPage() {
                 <ul>
                   <li>Animations</li>
                   <li>Drawing</li>
-                  <li>Patterns</li>
                 </ul>
               </li>
               <li>
@@ -76,11 +76,13 @@ export default function AboutPage() {
               <li>AI: Somnium Files (PS4)</li>
               <li>Final Fantasy XIV: Shadowbringers (PS4)</li>
               <li>Dragon Quest (Android)</li>
+              <li>Dragon Quest VIII (3DS)</li>
               <li>Xenoblade Chronicles 3D (3DS)</li>
               <li>Pokémon Sword (Switch)</li>
               <li>Luigi's Mansion 3 (Switch)</li>
               <li>Tales of Vesperia (PS4)</li>
               <li>Final Fantasy XII: The Zodiac Age (PS4)</li>
+              <li>Untitled Goose Game (PS4)</li>
             </ol>
           </ContentWrapper>
         </aside>
