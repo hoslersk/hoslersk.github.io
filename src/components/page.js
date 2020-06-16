@@ -46,7 +46,6 @@ export default function Page({ children }) {
         className="container"
         id="main"
         style={{ height: mainElementHeight + 'px' }}
-        tabIndex="-1"
       >
         {children}
       </main>
