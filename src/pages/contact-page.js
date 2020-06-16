@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 
+import Link from '../components/link';
 import PageTitle from '../components/page-title';
 import Heading from '../components/heading';
 import ContentWrapper from '../components/content-wrapper';
@@ -16,24 +17,24 @@ export default function ContactPage() {
         <p>External links:</p>
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/schyler-hosler-a282aa27" target="_blank" rel="noreferrer noopener">
+            <Link to="https://www.linkedin.com/in/schyler-hosler-a282aa27">
               LinkedIn
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://github.com/hoslersk" target="_blank" rel="noreferrer noopener">
+            <Link to="https://github.com/hoslersk">
               GitHub
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://my.playstation.com/profile/DigiVotary" target="_blank" rel="noreferrer noopener">
+            <Link to="https://my.playstation.com/profile/DigiVotary">
               PlayStation
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://twitter.com/schylerhosler" target="_blank" rel="noreferrer noopener">
+            <Link to="https://twitter.com/schylerhosler">
               Twitter
-            </a>
+            </Link>
           </li>
         </ul>
       </ContentWrapper>

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 
+import Link from '../components/link';
 import PageTitle from '../components/page-title';
 import Heading from '../components/heading';
 import ContentWrapper from '../components/content-wrapper';
@@ -14,9 +15,9 @@ export default function ToolsPage() {
       <ContentWrapper>
         <p>Coming Soon.</p>
         <p>
-          <a href="https://codepen.io/hoslersk/full/MWYyKPK" target="_blank" rel="noreferrer noopener">
+          <Link to="https://codepen.io/hoslersk/full/MWYyKPK">
             Color Contrast Checker for Accessibility (WIP)
-          </a>
+          </Link>
         </p>
       </ContentWrapper>
     </Fragment>

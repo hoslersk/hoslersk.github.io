@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
 
+import Link from '../components/link';
 import PageTitle from '../components/page-title';
 import Heading from '../components/heading';
 import ContentWrapper from '../components/content-wrapper';
