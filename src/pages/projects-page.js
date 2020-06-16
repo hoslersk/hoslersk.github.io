@@ -3,6 +3,7 @@ import { kebabCase, map } from 'lodash';
 
 import Link from '../components/link';
 import PageTitle from '../components/page-title';
+import PetDemo from '../components/pet-demo';
 import Heading from '../components/heading';
 import ContentWrapper from '../components/content-wrapper';
 
@@ -76,22 +77,30 @@ export default function ProjectsPage() {
       </Heading>
       <ContentWrapper>
         <p>Coming Soon.</p>
-        <ul>
-          {map(projects, ({ links, title }) => (
-            <li key={kebabCase(title)}>
-              <span>{title}</span>
-              <ul>
-                {map(links, ({ label, to }) => (
-                  <li key={to}>
-                    <Link to={to}>
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+        <div className="row">
+          <div className="column">
+            <ul>
+              {map(projects, ({ links, title }) => (
+                <li key={kebabCase(title)}>
+                  <span>{title}</span>
+                  <ul>
+                    {map(links, ({ label, to }) => (
+                      <li key={to}>
+                        <Link to={to}>
+                          {label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="column">
+            <PetDemo />
+            <div>Digital Pet Demo (WIP/TBD)</div>
+          </div>
+        </div>
       </ContentWrapper>
     </Fragment>
   );
