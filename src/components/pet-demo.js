@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './pet-demo.scss';
 
@@ -18,13 +18,11 @@ function getRandomCoordinate(min, max, current) {
 
 export default function PetDemo() {
   const [fill, setFill] = useState('grub-one'),
-      [position, setPosition] = useState({
-        x: SCREEN_CONFIG.x + 18,
-        y: SCREEN_CONFIG.y,
-      }),
-      [animation, setAnimation] = useState(null),
-      [isOpen, setIsOpen] = useState(false);
-
+        [position, setPosition] = useState({
+          x: SCREEN_CONFIG.x + 18,
+          y: SCREEN_CONFIG.y,
+        });
+        
   const toggleSprite = () => {
     setFill(currentFill => {
       if (currentFill.includes('one')) return currentFill.replace('one', 'two');

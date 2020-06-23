@@ -4,6 +4,10 @@
   position: absolute;
   opacity: 0;
   height: 2rem;
+  width: 2rem;
   color: $body-color;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   transform: translate(-3rem, 0);
 }
