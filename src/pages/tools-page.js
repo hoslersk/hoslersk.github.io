@@ -15,8 +15,8 @@ export default function ToolsPage() {
       <ContentWrapper>
         <p>Coming Soon.</p>
         <p>
-          <Link to="https://codepen.io/hoslersk/full/MWYyKPK">
-            Color Contrast Checker for Accessibility (WIP)
+          <Link to="https://schylerhosler.com/iro-iro">
+            iro-iro - Color Contrast Checker for Accessibility (WIP)
           </Link>
         </p>
       </ContentWrapper>
