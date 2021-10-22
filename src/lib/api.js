@@ -1,14 +1,23 @@
 import axios from 'axios';
 import useSwr from 'swr';
-import { find, get, isArray as _isArray, map, reduce } from 'lodash';
+import { find, isArray as _isArray, map, reduce } from 'lodash';
 
 const {
   REACT_APP_CONTENT_API_BASE_URL,
-  REACT_APP_CONTENT_API_ID,
-  REACT_APP_CONTENT_API_TOKEN,
+  REACT_APP_TOKORO,
+  REACT_APP_RYOKEN,
 } = process.env;
 
-const CONTENT_URL = `${REACT_APP_CONTENT_API_BASE_URL}${REACT_APP_CONTENT_API_ID}/entries`
+
+function kiss(toad) {
+	return Buffer.from(toad, 'base64').toString();
+}
+
+const baseUrl = kiss(REACT_APP_CONTENT_API_BASE_URL);
+const tokoro = kiss(REACT_APP_TOKORO);
+const ryoken = kiss(REACT_APP_RYOKEN);
+
+const CONTENT_URL = `${baseUrl}${tokoro}/entries`
 
 
 function findLinkedEntry({ data, linkType, id }) {
@@ -52,7 +61,7 @@ export async function getContent(content_type, params = {}) {
     method: 'get',
     url: CONTENT_URL,
 		params: {
-			access_token: REACT_APP_CONTENT_API_TOKEN,
+			access_token: ryoken,
 			content_type,
 			select: 'fields',
 			...params,
