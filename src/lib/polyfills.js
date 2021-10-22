@@ -4,7 +4,7 @@ export function objectAssignPolyfill() {
     // Must be writable: true, enumerable: false, configurable: true
     Object.defineProperty(Object, "assign", {
       value: function assign(target, varArgs) { // .length of function is 2
-        'use strict';
+        // 'use strict';
         if (target === null || target === undefined) {
           throw new TypeError('Cannot convert undefined or null to object');
         }
@@ -35,7 +35,7 @@ export function objectAssignPolyfill() {
 export function includesPolyfill() {
   if (!String.prototype.includes) {
     String.prototype.includes = function(search, start) {
-      'use strict';
+      // 'use strict';
 
       if (search instanceof RegExp) {
         throw TypeError('first argument must not be a RegExp');
