@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment as _ } from 'react';
 import { kebabCase, map } from 'lodash';
 
 import Link from '../components/link';
@@ -14,7 +14,7 @@ export default function ProjectsPage() {
   const { projects, isLoading, hasError } = useProjects();
 
   return (
-    <Fragment>
+    <_>
       <PageTitle title="Projects - Schyler Hosler" />
       <Heading>
         Projects <small aria-hidden="true">- プロジェクト</small>
@@ -31,7 +31,7 @@ export default function ProjectsPage() {
           </div>
         </div>
       </ContentWrapper>
-    </Fragment>
+    </_>
   );
 }
 
@@ -42,14 +42,17 @@ function Projects({ hasError, isLoading, projects }) {
   if (hasError) return 'An error occurred. Please try again later.'
   return (
     <ul>
-      {map(projects, ({ description, links, name, url }) => (
+      {map(projects, ({ description, repoUrls, name, hostedUrl }) => (
         <li key={kebabCase(name)}>
-          {url ? <Link className="h2" to={url.url}>{url.label}</Link> : <p className="h2">{name}</p>}
-          {description && <RichText>{description.json}</RichText>}
+          {hostedUrl ?
+						<Link className="h2" to={hostedUrl.url}>{hostedUrl.label}</Link> :
+						<p className="h2">{name}</p>
+					}
+          {description && <RichText>{description}</RichText>}
           <ul>
-            {map(links, ({ label, to }) => (
-              <li key={to}>
-                <Link to={to}>
+            {map(repoUrls, ({ label, url }) => (
+              <li key={url}>
+               <Link to={url}>
                   {label}
                 </Link>
               </li>

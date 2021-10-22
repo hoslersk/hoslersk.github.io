@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment as _ } from 'react';
 
 import Link from '../components/link';
 import PageTitle from '../components/page-title';
@@ -7,7 +7,7 @@ import ContentWrapper from '../components/content-wrapper';
 
 export default function ToolsPage() {
   return (
-    <Fragment>
+    <_>
       <PageTitle title="Tools - Schyler Hosler" />
       <Heading>
         Tools <small aria-hidden="true">- ツール</small>
@@ -15,6 +15,6 @@ export default function ToolsPage() {
       <ContentWrapper>
         <p>Coming Soon.</p>
       </ContentWrapper>
-    </Fragment>
+    </_>
   );
 }
