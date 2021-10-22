@@ -10,9 +10,11 @@ function isExternalUrl(url) {
 }
 
 
-export default function Link({ to, ...otherProps }) {
+export default function Link({ children, to, ...otherProps }) {
   const isExternalLink = isExternalUrl(to);
 
-  if (isExternalLink) return <a rel="noopener noreferrer" target="_blank" href={to} {...otherProps} />
-  return <RRLink to={to} {...otherProps}  />
+  if (isExternalLink) {
+    return <a rel="noopener noreferrer" target="_blank" href={to} {...otherProps}>{children}</a>
+  }
+  return <RRLink to={to} {...otherProps}>{children}</RRLink>
 }

@@ -17,10 +17,10 @@ const navLinks = [
     label: 'About',
     to: '/about',
   },
-  {
-    label: 'Tools',
-    to: '/tools',
-  },
+  // {
+  //   label: 'Tools',
+  //   to: '/tools',
+  // },
   {
     label: 'Projects',
     to: '/projects',

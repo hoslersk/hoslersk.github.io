@@ -53,8 +53,14 @@ ul {
   list-style-type: square;
 }
 
-h2 {
+li {
+  margin: 0.5rem;
+}
+
+h2, .h2 {
+  display: block;
   margin: 0 0 0.5em;
+  font-weight: $font-weight-bold;
   font-size: 1.125rem;
 }
 
@@ -73,7 +79,7 @@ h3 {
 .row {
   margin: 0 -1rem;
 
-  @media (min-width: 992px) {
+  @media (min-width: $breakpoint-lg) {
     display: flex;
   }
 }
@@ -82,7 +88,7 @@ h3 {
   padding: 0 1rem;
   margin-bottom: 1rem;
 
-  @media (min-width: 992px) {
+  @media (min-width: $breakpoint-lg) {
     width: 100%;
     flex: 1 1 100%;
 

@@ -5,6 +5,10 @@
 $roboto: 'Roboto', sans-serif;
 $noto-sans: 'Noto Sans JP', sans-serif;
 
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
 // Colors
 $white: #ffffff;
 $black: #000000;
@@ -20,3 +24,9 @@ $link-color: #943f2e;
 // Animations
 $hover-animation-duration: 0.3s;
 $grow-and-shrink-duration: 10s;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 922px;
+$breakpint-xl: 1200px;

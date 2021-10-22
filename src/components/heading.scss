@@ -1,17 +1,21 @@
 @import '../variables.scss';
 
 .heading {
-  font-weight: 300;
-  font-size: 3rem;
+  font-weight: $font-weight-light;
+  font-size: 2rem;
   text-transform: uppercase;
-  text-shadow: 0.4rem 0.4rem $inactive-color;
+  text-shadow: 0.133em 0.133em $inactive-color;
   margin: 0 0 1rem;
 
   small {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 0.5em;
+    font-weight: $font-weight-bold;
     font-family: $noto-sans;
     text-shadow: none;
     white-space: nowrap;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 3rem;
   }
 }
